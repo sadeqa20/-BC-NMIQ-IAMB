@@ -15,7 +15,6 @@ data=load('./Datasets/Leukemia.mat');data=data.a;
 %%
 X_data=data(:,1:end-1);
 Y_labels=data(:,end);
-
 M=max(Y_labels);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Pre-process the data %%%
@@ -49,7 +48,6 @@ final_ACC_Complete={[ACC_DISC],[ACC_Kmeans],[ACC_Complete]}
 Final_ACC_Complete=cell2mat(final_ACC_Complete);
 
 %%
-
 disp('------------------calculate Best Clustering-----------------------')
 for i=1:q
     X_cluster_data=X_data_c(:,i);
@@ -59,7 +57,6 @@ for i=1:q
     X_cluster(:,i)=mi(X_cluster_data,Y_labels);
     X_Kmeans(:,i)=mi(X_Kmeans_data,Y_labels);
     X_data_linkage(:,i)=mi(X_data_link,Y_labels);
-    
     
     if X_cluster(:,i)>=X_Kmeans(:,i)
         if X_cluster(:,i)>=X_data_linkage(:,i)
