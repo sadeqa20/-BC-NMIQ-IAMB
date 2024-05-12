@@ -9,7 +9,6 @@ a_Precision_dt=mean(Precision_dt);a_Precision_knn=mean(Precision_knn);a_Precisio
 a_Recall_dt=mean(Recall_dt);a_Recall_knn=mean(Recall_knn);a_Recall_rf=mean(Recall_rf);
 a_fmeasure_dt=mean(fmeasure_dt);a_fmeasure_knn=mean(fmeasure_knn);a_fmeasure_rf=mean(fmeasure_rf);
 TestAccuracy=mean(TestAccuracy);
-
 a_kol={[(length(data(1,:)))],[a_acc_dt],[a_acc_knn],[a_acc_rf];[(length(data(1,:)))],[a_Precision_dt],[a_Precision_knn],[a_Precision_rf];...
       [(length(data(1,:)))],[a_Recall_dt],[a_Recall_knn],[a_Recall_rf];[(length(data(1,:)))],[a_fmeasure_dt],[a_fmeasure_knn],[a_fmeasure_rf]};
    Kol=cell2mat(a_kol);
