@@ -19,8 +19,6 @@ TestTargets = Targets(tsIndex,:);
 
 %% Classify
 
-%%
-
     %% Apply k-Fold
  if max(Y_labels)==2
 %     N = numel(TrainTargets);
